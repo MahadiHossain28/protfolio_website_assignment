@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <!-- Tailwind Css CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Daisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <nav class="bg-base-100 shadow-sm">
+        <div class="navbar container mx-auto">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                    </div>
+                    <ul
+                        tabindex="-1"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#service">Service</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-xl">My Portfolio</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a href="#contact" class="btn">Hire Me</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <!-- Carousel Slide Section -->
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full h-[500px]">
+                <img
+                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="w-full" />
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide4" class="btn btn-circle">❮</a>
+                <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full h-[500px]">
+                <img
+                src="https://plus.unsplash.com/premium_photo-1678565869434-c81195861939?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="w-full" />
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide1" class="btn btn-circle">❮</a>
+                <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full h-[500px]">
+                <img
+                src="https://plus.unsplash.com/premium_photo-1685086785054-d047cdc0e525?q=80&w=2532&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="w-full" />
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide2" class="btn btn-circle">❮</a>
+                <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full h-[500px]">
+                <img
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="w-full" />
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <section class="container mx-auto my-10">
+            <!-- About Section Title -->
+            <h2 class="text-4xl text-center">About Section</h2>
+            <!-- About Section Body -->
+            <div class="flex flex-col md:flex-row gap-8 items-center mt-12 px-6">
+                <div class="flex-1">
+                    <img src="https://images.unsplash.com/photo-1640960543409-dbe56ccc30e2?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="person image" class="w-full h-[500px] rounded shadow-md object-cover">
+                </div>
+                <div class="flex-1">
+                    <p class="text-gray text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, provident sequi architecto hic illo odio facilis dolorem alias. Quam veniam, facilis odio eaque tenetur placeat quisquam dignissimos. Iusto ipsum earum veritatis numquam assumenda ea optio sunt aut? Facere quam ut perspiciatis dolorem. Soluta perspiciatis nam rerum. Dolores, ullam commodi? Dicta, dolorum maxime ut rem voluptates sunt dolor dolore delectus exercitationem doloremque nesciunt odio, incidunt molestias repellat, earum porro! Deleniti dolor laboriosam accusamus voluptatum, repudiandae ex doloremque qui quibusdam pariatur commodi rerum nam a earum blanditiis consequuntur? Impedit doloremque nesciunt consequatur praesentium reiciendis aliquam, fugiat vitae. Ex impedit commodi dolorum quidem ea eos accusantium possimus sequi.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Carrier Mission & Vision Section -->
+        <section class="container mx-auto my-10 px-6">
+            <!-- Carrier Mission & Vision Section Title -->
+            <h2 class="text-4xl text-center">Mission & Vision Section</h2>
+            <!-- Carrier Mission & Vision Section Body -->
+            <div class="flex flex-col md:flex-row gap-8 mt-12">
+                <div class="flex-1 bg-gray-300 rounded shadow-md p-4">
+                    <h3 class="text-3xl text-center mb-4">Mission</h3>
+                    <p class="text-gray text-md text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum vitae quod quibusdam ducimus mollitia aspernatur assumenda rerum soluta ad eaque, in atque fuga, odio culpa tempora, rem illum quia repellat. Explicabo dignissimos iure dolorum eius, corrupti rerum nesciunt ad saepe a consequatur excepturi consectetur voluptatem ratione cupiditate incidunt. Adipisci aliquid eligendi libero rem perferendis consectetur amet officia, accusamus quas cum dignissimos provident temporibus quo dolore molestiae aperiam dolores voluptates inventore non error soluta! Corrupti culpa quis fuga sapiente perspiciatis voluptatum, beatae quisquam omnis, nemo ea maiores debitis temporibus mollitia eveniet, earum cupiditate repellat tempore aperiam? Magni architecto culpa repudiandae obcaecati. Quis delectus, nemo deleniti dolor laboriosam fugit, quo consequuntur sint dicta soluta aperiam distinctio reiciendis ea eum tenetur eligendi et? Eos expedita, architecto non necessitatibus error culpa beatae aliquid laboriosam cumque sint enim autem earum vel tempore! Sapiente, natus repellat porro sed facere amet voluptatibus incidunt animi placeat voluptate error.</p>
+                </div>
+                <div class="flex-1 bg-gray-300 rounded shadow-md p-4">
+                    <h3 class="text-3xl text-center mb-4">Vision</h3>
+                    <p class="text-gray text-md text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum vitae quod quibusdam ducimus mollitia aspernatur assumenda rerum soluta ad eaque, in atque fuga, odio culpa tempora, rem illum quia repellat. Explicabo dignissimos iure dolorum eius, corrupti rerum nesciunt ad saepe a consequatur excepturi consectetur voluptatem ratione cupiditate incidunt. Adipisci aliquid eligendi libero rem perferendis consectetur amet officia, accusamus quas cum dignissimos provident temporibus quo dolore molestiae aperiam dolores voluptates inventore non error soluta! Corrupti culpa quis fuga sapiente perspiciatis voluptatum, beatae quisquam omnis, nemo ea maiores debitis temporibus mollitia eveniet, earum cupiditate repellat tempore aperiam? Magni architecto culpa repudiandae obcaecati. Quis delectus, nemo deleniti dolor laboriosam fugit, quo consequuntur sint dicta soluta aperiam distinctio reiciendis ea eum tenetur eligendi et? Eos expedita, architecto non necessitatibus error culpa beatae aliquid laboriosam cumque sint enim autem earum vel tempore! Sapiente, natus repellat porro sed facere amet voluptatibus incidunt animi placeat voluptate error.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="container mx-auto my-10 px-6">
+            <!-- Service Section Title -->
+            <h2 class="text-4xl text-center">My Services</h2>
+            <!-- Service Section Body -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+                <!-- Service one -->
+                <div class="bg-gray-300 rounded shadow-md p-4">
+                    <h3 class="text-3xl text-center mb-4">Service One</h3>
+                    <p class="text-gray text-md text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum vitae quod quibusdam ducimus mollitia aspernatur assumenda rerum soluta ad eaque, in atque fuga, odio culpa tempora, rem illum quia repellat. Explicabo dignissimos iure dolorum eius, corrupti rerum nesciunt ad saepe a consequatur excepturi consectetur voluptatem ratione cupiditate incidunt. Adipisci aliquid eligendi libero rem perferendis consectetur amet officia, accusamus quas cum dignissimos provident temporibus quo dolore molestiae aperiam dolores voluptates inventore non error soluta!</p>
+                </div>
+
+                <!-- Service Two -->
+                <div class="bg-gray-300 rounded shadow-md p-4">
+                    <h3 class="text-3xl text-center mb-4">Service Two</h3>
+                    <p class="text-gray text-md text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum vitae quod quibusdam ducimus mollitia aspernatur assumenda rerum soluta ad eaque, in atque fuga, odio culpa tempora, rem illum quia repellat. Explicabo dignissimos iure dolorum eius, corrupti rerum nesciunt ad saepe a consequatur excepturi consectetur voluptatem ratione cupiditate incidunt. Adipisci aliquid eligendi libero rem perferendis consectetur amet officia, accusamus quas cum dignissimos provident temporibus quo dolore molestiae aperiam dolores voluptates inventore non error soluta!</p>
+                </div>
+
+                <!-- Service Three -->
+                <div class="bg-gray-300 rounded shadow-md p-4">
+                    <h3 class="text-3xl text-center mb-4">Service Three</h3>
+                    <p class="text-gray text-md text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum vitae quod quibusdam ducimus mollitia aspernatur assumenda rerum soluta ad eaque, in atque fuga, odio culpa tempora, rem illum quia repellat. Explicabo dignissimos iure dolorum eius, corrupti rerum nesciunt ad saepe a consequatur excepturi consectetur voluptatem ratione cupiditate incidunt. Adipisci aliquid eligendi libero rem perferendis consectetur amet officia, accusamus quas cum dignissimos provident temporibus quo dolore molestiae aperiam dolores voluptates inventore non error soluta! Corrupti culpa quis fuga sapiente perspiciatis voluptatum, beatae quisquam omnis, nemo ea maiores debitis temporibus mollitia eveniet, earum cupiditate repellat tempore aperiam?</p>
+                </div>
+
+                <!-- Service Four -->
+                <div class="bg-gray-300 rounded shadow-md p-4">
+                    <h3 class="text-3xl text-center mb-4">Service Four</h3>
+                    <p class="text-gray text-md text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum vitae quod quibusdam ducimus mollitia aspernatur assumenda rerum soluta ad eaque, in atque fuga, odio culpa tempora, rem illum quia repellat. Explicabo dignissimos iure dolorum eius, corrupti rerum nesciunt ad saepe a consequatur excepturi consectetur voluptatem ratione cupiditate incidunt. Adipisci aliquid eligendi libero rem perferendis consectetur amet officia, accusamus quas cum dignissimos provident temporibus quo dolore molestiae aperiam dolores voluptates inventore non error soluta! Corrupti culpa quis fuga sapiente perspiciatis voluptatum, beatae quisquam omnis, nemo ea maiores debitis temporibus mollitia eveniet, earum cupiditate repellat tempore aperiam?</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Client Feedback Section -->
+        <section class="bg-gray-50 py-16">
+            <div class="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
+                
+                <!-- Client Feedback Section Heading -->
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900">What Our Clients Say</h2>
+                    <p class="mt-4 text-gray-600">Trusted by businesses and customers worldwide.</p>
+                </div>
+
+                <!-- Client Feedback Body -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                    <!-- Feedback One -->
+                    <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+                        <div class="flex items-center mb-4">
+                        <img src="https://i.pravatar.cc/100?img=1" alt="Client" class="w-14 h-14 rounded-full object-cover"
+                        />
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-gray-900">John Smith</h4>
+                            <p class="text-sm text-gray-500">CEO, Tech Solutions</p>
+                        </div>
+                        </div>
+                        <p class="text-gray-600">
+                        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, illum earum quod soluta veniam, nemo laborum debitis aperiam accusantium, officia natus. Voluptates, laboriosam vero ipsa atque, voluptatum cupiditate molestiae alias, unde tempora eum nesciunt esse quo mollitia. Perspiciatis, eligendi eum".
+                        </p>
+                        <div class="flex text-yellow-400 mt-4">
+                        ★★★★★
+                        </div>
+                    </div>
+
+                    <!-- Feedback Two -->
+                    <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+                        <div class="flex items-center mb-4">
+                        <img src="https://i.pravatar.cc/100?img=5" alt="Client" class="w-14 h-14 rounded-full object-cover"
+                        />
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-gray-900">Sarah Johnson</h4>
+                            <p class="text-sm text-gray-500">Marketing Director</p>
+                        </div>
+                        </div>
+                        <p class="text-gray-600">
+                        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, illum earum quod soluta veniam, nemo laborum debitis aperiam accusantium, officia natus. Voluptates".
+                        </p>
+                        <div class="flex text-yellow-400 mt-4">
+                        ★★★★★
+                        </div>
+                    </div>
+
+                    <!-- Feedback Three -->
+                    <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+                        <div class="flex items-center mb-4">
+                        <img src="https://i.pravatar.cc/100?img=8" alt="Client" class="w-14 h-14 rounded-full object-cover"
+                        />
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-gray-900">Michael Brown</h4>
+                            <p class="text-sm text-gray-500">Business Owner</p>
+                        </div>
+                        </div>
+                        <p class="text-gray-600">
+                        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, illum earum quod soluta veniam, nemo laborum debitis aperiam accusantium, officia natus. Voluptates".
+                        </p>
+                        <div class="flex text-yellow-400 mt-4">
+                        ★★★★★
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="text-center py-6 border-t border-gray-200">
+            <p class="text-sm text-gray-500">
+                Designed & Developed by
+                <span class="font-semibold text-gray-900">MD Mahadi Hossain</span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
